@@ -5,7 +5,7 @@
              Title="{Binding Title}"
              xmlns:local="clr-namespace:VehicleHistory.ViewModels"  
              xmlns:model="clr-namespace:VehicleHistory.Models"  
-             x:Name="_ServiceHistoryPage">
+             x:Name="serviceHistoryPage">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add new" Command="{Binding AddItemCommand}" />

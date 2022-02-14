@@ -11,6 +11,7 @@ namespace VehicleHistory.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Service> ServiceDataStore => DependencyService.Get<IDataStore<Service>>();
+        public IDataStore<FuelRecord> FuelRecordDataStore => DependencyService.Get<IDataStore<FuelRecord>>();
 
         bool isBusy = false;
         public bool IsBusy

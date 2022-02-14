@@ -82,10 +82,10 @@
         <ShellContent Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
     </FlyoutItem>
     <FlyoutItem Title="Fuel Records" Icon="icon_fuel.png">
-        <ShellContent Route="FuelRecordsPage" ContentTemplate="{DataTemplate local:ServiceHistoryPage}" />
+        <ShellContent Route="FuelRecordsPage" ContentTemplate="{DataTemplate local:FuelRecordsPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Service History" Icon="icon_wrench.png">
-        <ShellContent Route="ServiceHistoryPage" ContentTemplate="{DataTemplate local:FuelRecordsPage}" />
+        <ShellContent Route="_ServiceHistoryPage" ContentTemplate="{DataTemplate local:ServiceHistoryPage}" />
     </FlyoutItem>
     
 
