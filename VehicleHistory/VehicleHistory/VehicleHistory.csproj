@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NewFuelRecordPage.xaml.cs">
+      <DependentUpon>NewFuelRecordPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ServiceHistoryPage.xaml.cs">
+      <DependentUpon>ServiceHistoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NewServicePage.xaml.cs">
+      <DependentUpon>NewServicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ServiceDetailPage.xaml.cs">
+      <DependentUpon>ServiceDetailPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\FuelRecordsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NewFuelRecordPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

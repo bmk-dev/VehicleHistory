@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VehicleHistory.Views.ServiceDetailPage"
+             Title="{Binding Title}">
+
+    <StackLayout Spacing="20" Padding="15">
+        <StackLayout Spacing="6">
+            <Label Text="Service" FontSize="Medium" />
+            <Label Text="{Binding Title}" FontSize="Small" />
+        </StackLayout>
+        <StackLayout Spacing="6">
+            <Label Text="Mileage performed" FontSize="Medium" />
+            <Label Text="{Binding Mileage}" FontSize="Small" />
+        </StackLayout>
+        <StackLayout Spacing="6">
+            <Label Text="Description" FontSize="Medium" />
+            <Label Text="{Binding Description}" FontSize="Small"/>
+        </StackLayout>
+        
+        
+        
+    </StackLayout>
+    
+</ContentPage>
