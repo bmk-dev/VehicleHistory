@@ -104,7 +104,24 @@ namespace VehicleHistory.IO
 
         }
 
-
+        // Test method
+        public void WriteData()
+        {
+            var userdata = new UserData()
+            {
+                FuelRecords = new()
+                {
+                    new() { Id = Guid.NewGuid().ToString(), GallonsPumped = 12.53f, Mileage = 102315 },
+                    new() { Id = Guid.NewGuid().ToString(), GallonsPumped = 12.57f, Mileage = 102515 },
+                    new() { Id = Guid.NewGuid().ToString(), GallonsPumped = 13.13f, Mileage = 102715 },
+                    new() { Id = Guid.NewGuid().ToString(), GallonsPumped = 11.33f, Mileage = 102915 },
+                    new() { Id = Guid.NewGuid().ToString(), GallonsPumped = 13.63f, Mileage = 103015 },
+                    new() { Id = Guid.NewGuid().ToString(), GallonsPumped = 11.53f, Mileage = 103215 },
+                    new() { Id = Guid.NewGuid().ToString(), GallonsPumped = 12.23f, Mileage = 103415 },
+                },
+            };
+            DataController.Instance.Save(userdata);
+        }
 
     }
 }
