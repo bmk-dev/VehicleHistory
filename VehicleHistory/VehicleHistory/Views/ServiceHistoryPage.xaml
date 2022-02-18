@@ -15,7 +15,7 @@
       https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
     -->
     <RefreshView x:DataType="local:ServicesViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-        <CollectionView x:Name="ServiceHistoryPage"
+        <CollectionView x:Name="_serviceHistoryPage"
                 ItemsSource="{Binding Items}"
                 SelectionMode="None">
             <CollectionView.ItemTemplate>
