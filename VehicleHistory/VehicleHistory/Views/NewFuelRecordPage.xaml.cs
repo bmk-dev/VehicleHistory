@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace VehicleHistory.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class NewFuelRecordPage : ContentPage
     {
-        public Page1()
+        public NewFuelRecordPage()
         {
             InitializeComponent();
         }

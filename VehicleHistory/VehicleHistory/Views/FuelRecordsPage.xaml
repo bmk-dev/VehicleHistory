@@ -5,7 +5,7 @@
              Title="{Binding Title}"
              xmlns:local="clr-namespace:VehicleHistory.ViewModels"  
              xmlns:model="clr-namespace:VehicleHistory.Models"  
-             >
+             x:Name="fuelRecordsPage">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add new" Command="{Binding AddItemCommand}" />
@@ -15,16 +15,12 @@
       https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
     -->
     <RefreshView x:DataType="local:FuelRecordViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
-        <CollectionView x:Name="FuelRecordsPage"
+        <CollectionView x:Name="_fuelRecordsPage"
                 ItemsSource="{Binding Items}"
                 SelectionMode="None">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10" x:DataType="model:FuelRecord">
-                        <Label Text="{Binding DateTime}" 
-                            LineBreakMode="NoWrap" 
-                            Style="{DynamicResource ListItemTextStyle}" 
-                            FontSize="16" />
                         <Label Text="{Binding GallonsPumped}" 
                             LineBreakMode="NoWrap" 
                             Style="{DynamicResource ListItemTextStyle}" 
